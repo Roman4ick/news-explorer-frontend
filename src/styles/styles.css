@@ -1,0 +1,8 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+@import url(./blocks/main/main.css);
+@import url(./blocks/main/search/search.css);
+@import url(./blocks/main/search/header.css);
+@import url(./blocks/main/footer/footer.css);
+@import URL(./blocks/about/about.css);
