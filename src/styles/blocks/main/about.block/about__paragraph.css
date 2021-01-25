@@ -1,0 +1,14 @@
+.about__paragraph {
+    margin: 0;
+    padding-left: 56px;
+    max-width: 620px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+}
+.about__paragraph:last-child {
+padding-top: 24px;
+}

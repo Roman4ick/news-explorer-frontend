@@ -1,0 +1,8 @@
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 624px;
+    background: #FFFFFF;
+}

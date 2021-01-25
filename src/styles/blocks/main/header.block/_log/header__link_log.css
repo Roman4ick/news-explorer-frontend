@@ -1,0 +1,10 @@
+.header__link_log {
+    color: #1A1B22;
+    margin-right: 32px;
+}
+.header__link_log:hover {
+    color:  #1A1B22;
+}
+.active__log {
+    border-bottom: 3px solid #1A1B22;
+}

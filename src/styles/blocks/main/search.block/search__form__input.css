@@ -1,0 +1,14 @@
+.search__form__input {
+    width: 376px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 24px;
+    font-family: Roboto,  Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+    border: none;
+    border-radius: 100px;
+}

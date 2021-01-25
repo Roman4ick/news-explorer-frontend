@@ -21,8 +21,12 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: "./src/index.html",
-            filename: "index.html",
+            template: "./src/pages/main.html",
+            filename: "main.html",
+        }),
+        new HTMLWebpackPlugin({
+            template: "./src/pages/news.html",
+            filename: "news.html",
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

@@ -1,0 +1,12 @@
+.log-header__heading {
+    margin: 0;
+    padding-top: 28px;
+    padding-bottom:30px;
+    max-width: 530px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+}

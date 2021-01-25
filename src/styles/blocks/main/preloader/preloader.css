@@ -1,0 +1,7 @@
+.preloader {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 280px;
+    display: none;
+}

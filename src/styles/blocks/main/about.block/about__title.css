@@ -1,0 +1,13 @@
+.about__title {
+    margin: 0;
+    padding-top: 131px;
+    padding-bottom: 24px;
+    padding-left: 56px;
+    max-width: 496px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+}

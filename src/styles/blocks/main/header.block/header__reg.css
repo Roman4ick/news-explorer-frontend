@@ -1,0 +1,19 @@
+.header__reg {
+    max-width: 176px;
+    max-height: 50px;
+    border-radius: 100px;
+    padding-top: 11.88px;
+    padding-right: 12px;
+    padding-bottom: 15.12px;
+    padding-left: 12px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}

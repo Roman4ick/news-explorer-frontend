@@ -1,0 +1,6 @@
+.popup__close {
+    z-index: 1000;
+    max-width: 40px;
+    max-height: 40px;
+    cursor: pointer;
+}

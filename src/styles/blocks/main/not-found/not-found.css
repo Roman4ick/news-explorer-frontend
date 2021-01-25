@@ -1,0 +1,8 @@
+.not-found {
+    max-width: 356px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
