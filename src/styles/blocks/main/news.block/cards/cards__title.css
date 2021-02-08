@@ -2,10 +2,26 @@
     margin: 0;
     max-width: 352px;
     padding-top: 12px;
-    font-family: Roboto Slab;
+    font-family: Roboto Slab, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
     line-height: 30px;
     color: #1A1B22;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .cards__title {
+        width: 192px;
+        font-size: 22px;
+        line-height: 24px;
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .cards__title{
+        padding-top: 10px;
+        font-size: 22px;
+        line-height: 28px;
+        max-width: 320px;     
+    }
 }

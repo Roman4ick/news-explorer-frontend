@@ -4,10 +4,29 @@
     padding-bottom: 24px;
     padding-left: 56px;
     max-width: 496px;
-    font-family: Roboto Slab;
+    font-family: Roboto Slab, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
     line-height: 46px;
     color: #1A1B22;
+
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .about__title {
+        padding-left: 32px;
+        padding-bottom: 16px;
+        padding-top: 40px;
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .about__title {
+        padding-top: 1px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        max-width: 320px;
+    }
 }

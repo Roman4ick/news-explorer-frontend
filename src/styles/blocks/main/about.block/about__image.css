@@ -3,4 +3,25 @@
     max-width: 464px;
     padding-top: 80px;
     padding-left: 104px;
+    padding-bottom: 80px;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .about__image {
+        width: 232px;
+        padding-top: 61px;
+        padding-left: 40px;
+        padding-bottom: 61px;
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .about__image {
+        padding-top: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+        width: 272px;
+        height: 272px;
+        max-width: 320px;
+    }
 }

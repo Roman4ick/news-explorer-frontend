@@ -1,6 +1,8 @@
 .popup__close {
-    z-index: 1000;
+    padding-left: 440px;
+    z-index: 10;
     max-width: 40px;
     max-height: 40px;
     cursor: pointer;
+    outline: none;
 }

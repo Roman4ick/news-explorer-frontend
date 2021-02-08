@@ -11,7 +11,7 @@ const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
     mode: "development",
-    entry: ["@babel/polyfill", "./src/js/script.js"],
+    entry: ["@babel/polyfill", "./src/js/index.js"],
     output: {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist"),
@@ -30,7 +30,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: "style.[contenthash].css",
+            filename: "main.[contenthash].css",
         }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
@@ -60,7 +60,7 @@ module.exports = {
                     "postcss-loader",
 
                 ],
-            },
+        },  
             {
                 test: /\.js$/,
                 exclude: /node_modules/,

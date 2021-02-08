@@ -13,7 +13,7 @@
 @import url(./blocks/main/header.block/header__reg.css);
 @import url(./blocks/main/header.block/hidden.css);
 @import url(./blocks/main/header.block/header__logout.css);
-@import url(./blocks/main/header.block/_log/header__reg_log.css);
+@import url(./blocks/main/header.block/_log/header__log.css);
 @import url(./blocks/main/header.block/_log/header__link_log.css);
 @import url(./blocks/main/header.block/_log/header__link_black.css);
 @import url(./blocks/main/header.block/_log/header__logo_black.css);
@@ -22,8 +22,8 @@
 
 @import url(./blocks/main/search.block/search.css);
 @import url(./blocks/main/search.block/search__form.css);
-@import url(./blocks/main/search.block/search__form__button.css);
-@import url(./blocks/main/search.block/search__form__input.css);
+@import url(./blocks/main/search.block/search__form-button.css);
+@import url(./blocks/main/search.block/search__form-input.css);
 @import url(./blocks/main/search.block/search__paragraph.css);
 @import url(./blocks/main/search.block/search__title.css);
 
@@ -47,7 +47,9 @@
 @import url(./blocks/main/popup/popup__content.css);
 @import url(./blocks/main/popup/popup__entrance/popup__entrance.css);
 @import url(./blocks/main/popup/popup__info/popup__info.css);
-@import url(./blocks/main/popup/popup__close.css);
+@import url(./blocks/main/popup/popup__close/popup__close.css);
+@import url(./blocks/main/popup/popup__close/popup-info__close.css);
+@import url(./blocks/main/popup/popup__close/popup-entrance__close.css);
 @import url(./blocks/main/popup/popup__title.css);
 @import url(./blocks/main/popup/popup__form/popup__form.css);
 @import url(./blocks/main/popup/popup__form/popup__input.css);
@@ -56,6 +58,7 @@
 @import url(./blocks/main/popup/popup__content-entrance.css);
 @import url(./blocks/main/popup/popup__content-link.css);
 @import url(./blocks/main/popup/popup__entrance/popup__button_size.css);
+@import url(./blocks/main/popup/popup_is-opened.css);
 
 /* Блок news*/
 
@@ -109,7 +112,11 @@
 
 /* Блок news*/
 
-@import url(./blocks/news/cards__image/cards__image-btn.css);
+@import url(./blocks/news/cards__image/card__image-btn/cards__image-btn.css);
 @import url(./blocks/news/cards__image/cards__image-info.css);
 @import url(./blocks/news/cards__image/cards__image-value.css);
-@import url(./blocks/news/cards__image/cards__image-del.css);
+@import url(./blocks/news/cards__image/card__image-dell/cards__image-dell.css);
+
+
+/* Блок news*/
+

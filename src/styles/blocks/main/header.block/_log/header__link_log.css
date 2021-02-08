@@ -8,3 +8,21 @@
 .active__log {
     border-bottom: 3px solid #1A1B22;
 }
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .header__link_log {
+        padding-bottom: 20px;
+        margin-right: 16px;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 768px;
+    }
+    .active__log {
+        border-bottom: 3px solid #1A1B22;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .header__link_log {
+        border: none;
+        max-width: 320px;     
+    }
+}

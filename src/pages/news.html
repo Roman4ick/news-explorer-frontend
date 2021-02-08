@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Suvorov Roman">
-    <link rel="icon" href="../images/icons/N.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="<%=require('../images/icons/N.svg')%>" type="image/x-icon">
     <title>loggedNewsApi</title>
 </head>
 <body>
@@ -15,12 +14,12 @@
             <nav class="header__menu">
                 <a class="header__link header__link_black" href="./main.html">Главная</a>
                 <a class="header__link header__link_log active__log" href="./news.html">Сохранённые статьи</a>
-                <button class="header__reg header__reg_log" type="submit">Грета<img class="header__logout" src="../images/icons/header_log/icon/logout.svg" alt="exit"></button>
+                <button class="header__log" type="submit">Роман<img class="header__logout" src="<%=require('../images/icons/logout.svg')%>" alt="exit"></button>
             </nav>
         </header>
         <div class="log-header">
             <p class="log-header__info">Сохранённые статьи</p>
-            <h1 class="log-header__heading">Грета, у вас 5 сохранённых статей</h1>
+            <h1 class="log-header__heading">Роман, у вас 5 сохранённых статей</h1>
             <p class="log-header__key">По ключевым словам: <strong>Природа, Тайга и 2-м другим</strong></p>
         </div>
     </section>
@@ -29,10 +28,9 @@
             <div class="cards__item">
                 <div class="cards__image"> 
                     <div class="cards__image-value">Природа</div>
-                    <div class="cards__image-info hidden">Убрать из сохранённых</div>
-                    <button class="cards__image-btn"><img class="cards__image-del" src="../images/icons/del.svg" alt="Удалить"></button> 
-                    <button class="cards__image-btn hidden"><img class="cards__image-del" src="../images/icons/trash.svg" alt="Удалить"></button> 
-                    <img class="cards__img" src="../images/log-image_06.jpg" alt="Лесные огоньки: история одной фотографии">
+                    <div class="cards__image-dell"></div>  
+                    <div class="cards__image-info">Убрать из сохранённых</div>
+                    <img class="cards__img" src="<%=require('../images/image_06.jpg')%>" alt="Лесные огоньки: история одной фотографии">
                 </div>
                 <div class="cards__content">
                     <time class="cards__time">12 января, 2021</time>
@@ -44,10 +42,9 @@
             <div class="cards__item">
                 <div class="cards__image">
                     <div class="cards__image-value">Природа</div>
-                    <div class="cards__image-info hidden">Убрать из сохранённых</div>
-                    <button class="cards__image-btn"><img class="cards__image-del" src="../images/icons/del.svg" alt="Удалить"></button>
-                    <button class="cards__image-btn hidden"><img class="cards__image-del" src="../images/icons/trash.svg" alt="Удалить"></button> 
-                    <img class="cards__img" src="../images/log-image_01.jpg" alt="Лесные огоньки: история одной фотографии">
+                    <div class="cards__image-dell"></div> 
+                    <div class="cards__image-info">Убрать из сохранённых</div>
+                    <img class="cards__img" src="<%=require('../images/image_01.jpg')%>" alt="Лесные огоньки: история одной фотографии">
                 </div>
                 <div class="cards__content">
                     <time class="cards__time">12 января, 2021</time>
@@ -59,10 +56,9 @@
             <div class="cards__item">
                 <div class="cards__image">
                     <div class="cards__image-value">Природа</div>
-                    <div class="cards__image-info hidden">Убрать из сохранённых</div>
-                    <button class="cards__image-btn"><img class="cards__image-del" src="../images/icons/del.svg" alt="Удалить"></button>
-                    <button class="cards__image-btn hidden"><img class="cards__image-del" src="../images/icons/trash.svg" alt="Удалить"></button> 
-                    <img class="cards__img" src="../images/log-image_05.jpg" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
+                    <div class="cards__image-dell"></div> 
+                    <div class="cards__image-info">Убрать из сохранённых</div>
+                    <img class="cards__img" src="<%=require('../images/image_05.jpg')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
                 </div>
                 <div class="cards__content">
                     <time class="cards__time">12 января, 2021</time>
@@ -74,10 +70,9 @@
             <div class="cards__item ">
                 <div class="cards__image">
                     <div class="cards__image-value">Природа</div>
-                    <div class="cards__image-info hidden">Убрать из сохранённых</div>
-                    <button class="cards__image-btn"><img class="cards__image-del" src="../images/icons/del.svg" alt="Удалить"></button>
-                    <button class="cards__image-btn hidden"><img class="cards__image-del" src="../images/icons/trash.svg" alt="Удалить"></button> 
-                    <img class="cards__img" src="../images/image_04.jpg" alt="Национальное достояние – парки">
+                    <div class="cards__image-dell"></div> 
+                    <div class="cards__image-info">Убрать из сохранённых</div>
+                    <img class="cards__img" src="<%=require('../images/image_04.jpg')%>" alt="Национальное достояние – парки">
                 </div>
                 <div class="cards__content">
                     <time class="cards__time">12 января, 2021</time>
@@ -89,10 +84,9 @@
             <div class="cards__item ">
                 <div class="cards__image">
                     <div class="cards__image-value">Природа</div>
-                    <div class="cards__image-info hidden">Убрать из сохранённых</div>
-                    <button class="cards__image-btn"><img class="cards__image-del" src="../images/icons/del.svg" alt="Удалить"></button>
-                    <button class="cards__image-btn hidden"><img class="cards__image-del" src="../images/icons/trash.svg" alt="Удалить"></button> 
-                    <img class="cards__img" src="../images/image_05.jpg" alt="Лесные огоньки: история одной фотографии">
+                    <div class="cards__image-dell"></div> 
+                    <div class="cards__image-info">Убрать из сохранённых</div>
+                    <img class="cards__img" src="<%=require('../images/image_05.jpg')%>" alt="Лесные огоньки: история одной фотографии">
                 </div>
                 <div class="cards__content">
                     <time class="cards__time">12 января, 2021</time>
@@ -111,11 +105,10 @@
             <a class="footer__nav-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
         </nav>
         <div class="footer__social">
-            <a class="footer__social-link" href="https://github.com"><img class="" src="../images/icons/Github.svg"></a>
-            <a class="footer__social-link" href="https://www.facebook.com/"><img class="" src="../images/icons/Facebook.svg"></a>
+            <a class="footer__social-link" href="https://github.com"><img class="" src="<%=require('../images/icons/Github.svg')%>"></a>
+            <a class="footer__social-link" href="https://www.facebook.com/"><img class="" src="<%=require('../images/icons/Facebook.svg')%>"></a>
         </div>
     </div>
-        <script src=""></script>
     </footer>
 </body>
 </html>

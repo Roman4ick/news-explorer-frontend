@@ -1,7 +1,7 @@
 .popup__button {
     padding:20px 76px 20px 78px ;
     margin-top: 39px;
-    font-family: Roboto;
+    font-family: Roboto, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -13,4 +13,5 @@
     border-radius: 100px;
     border: none;
     cursor: pointer;
+    outline: none;
 }

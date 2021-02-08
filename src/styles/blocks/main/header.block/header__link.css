@@ -9,8 +9,25 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
+    outline: none;
 }
 .active {
     border-bottom: 3px solid white;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .header__link {
+        padding-bottom: 12px;
+        margin-right: 16px;
+        padding-top: 22px;
+        max-width: 768px;
+    }
+
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .header__link{
+        display: none;
+        border: none;
+        max-width: 320px;     
+    }
 }

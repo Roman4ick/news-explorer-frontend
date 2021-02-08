@@ -2,3 +2,15 @@
     padding-right: 104px;
     align-self: center;
 }
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .header__menu {
+        padding-right: 40px;
+        max-width: 768px;
+    }
+
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .header__menu{
+        max-width: 320px;     
+    }
+}

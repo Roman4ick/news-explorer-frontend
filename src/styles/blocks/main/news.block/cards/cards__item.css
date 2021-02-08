@@ -4,3 +4,17 @@
     padding-bottom: 24px;
     border-radius: 20px;
 }
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .cards__item {
+        padding-bottom: 16px;
+        width: 224px;
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .cards__item {
+        width: 288px;
+        padding-bottom: 10px;
+        max-width: 320px;     
+    }
+}
