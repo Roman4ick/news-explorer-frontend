@@ -10,6 +10,11 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .news {
+        max-width: 343px;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .news {
         max-width: 320px;     

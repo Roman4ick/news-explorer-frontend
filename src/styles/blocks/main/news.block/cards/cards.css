@@ -21,6 +21,14 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        max-width: 343px;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .cards {
         display: flex;

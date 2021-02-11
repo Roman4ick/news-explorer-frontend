@@ -20,6 +20,11 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .log-header__heading {
+        max-width: 375px;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .log-header__heading {
         width: 288px;

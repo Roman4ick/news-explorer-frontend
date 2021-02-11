@@ -1,7 +1,5 @@
 .search__form-button {
     position: absolute;
-    margin-bottom: 80px;
-    margin-left: 440px;
     bottom: 0;
     width: 168px;
     height: 66px;
@@ -15,6 +13,9 @@
     line-height: 24px;
     color: #FFFFFF;
     outline: none;
+    margin-bottom: 80px;
+    margin-left: 440px;
+    cursor: pointer;
 }
 .search__form-button:hover {
     background: #347EFF;
@@ -27,16 +28,24 @@ box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .search__form-button  {
         width: 160px;
-        height: 56px;
-        max-width: 768px;
+        height: 58px;
+        margin-right: 153px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .search__form-button{
+        width: 80px;
+        height: 58px;
+        margin-right: 153px;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 374px){
     .search__form-button  {
         position: absolute;
-        margin-left: 1px;
+        margin: 0;
+        margin-top: 30px;
         margin-bottom: 32px;
+        height: 56px;
         width: 288px;  
-        height: 56px;   
     }
 }

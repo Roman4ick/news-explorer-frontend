@@ -19,6 +19,14 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .footer__copyright {
+        padding-top: 24px;
+        padding-bottom: 18px;
+        padding-left: 10px;
+        max-width: 80%;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .footer__copyright {
         padding: 0;

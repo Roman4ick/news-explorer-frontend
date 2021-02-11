@@ -12,6 +12,15 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .log-header {
+        padding: 0;
+        padding-top: 24px;
+        padding-bottom: 32px;
+        padding-left: 10px;
+        max-width: 375px;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .log-header  {
         padding-top: 8px;

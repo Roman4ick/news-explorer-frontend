@@ -9,24 +9,23 @@
 </head>
 <body>
     <section class="search">
-        <header class="header">
-            <span class="header__logo">NewsAnalyzer</span>         
-            <div class="header__burger"></div>        
-            <nav class="header__menu">
+        <header class="header">  
+            <span class="header__logo">NewsAnalyzer</span>                   
+            <nav class="header__menu"> 
                 <a class="header__link active" href="./main.html">Главная</a>
-                <button class="header__reg" type="submit">Авторизоваться</button>
+                <button class="header__reg " type="submit">Авторизоваться</button>
                 <a class="header__link hidden" href="./news.html">Сохранённые статьи</a>
-                <button class="header__log hidden" type="submit">Роман<img class="header__logout" src="<%=require('../images/icons/logout.svg')%>" alt="exit"></button>
+                <button class="header__log header__log_white hidden" type="submit">Роман<img class="header__logout" src="<%=require('../images/icons/logwhite.svg')%>" alt="exit"></button>
             </nav>
         </header>      
         <div class="search__info">  
             <h1 class="search__title">Что творится в мире?</h1>
             <p class="search__paragraph">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
         </div>
-        <form class="search__form" action="" method="get">
-            <input class="search__form-input" placeholder="Введите тему новости" type="search">
+        <form class="search__form" action="#" method="get">
+            <input class="search__form-input" placeholder="Введите тему новости" type="search" required/>
         </form>
-        <button class="search__form-button" type="submit">Искать</button>
+        <button class="search__form-button"  type="submit">Искать</button>
     </section>
     <div class="popup">
         <div class="popup__wrapper">  
@@ -35,11 +34,11 @@
             <h3 class="popup__title">Регистрация</h3>
             <form class="popup__form">
             <label class="popup__label" for="email">email</label>
-            <input type="email" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+            <input type="email" id="email" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
             <label class="popup__label" for="password">Пароль</label>
-            <input type="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+            <input type="password" id="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
             <label class="popup__label" for="name">Имя</label>
-            <input type="text" minlength="2" maxlength="30" class="popup__input" placeholder="Введите свое имя" required/>
+            <input type="text" id="name" minlength="2" maxlength="30" class="popup__input" placeholder="Введите свое имя" required/>
             <button type="submit" class="popup__button">Зарегистрироваться</button>
             </form>   
             <p class="popup__content-entrance">или <a class="popup__content-link" href="#">Войти</a></p>     
@@ -52,10 +51,10 @@
         <div class="popup__content">
             <h3 class="popup__title">Вход</h3>
             <form class="popup__form">
-            <label class="popup__label" for="email">email</label>
-            <input type="email" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
-            <label class="popup__label" for="password">Пароль</label>
-            <input type="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+            <label class="popup__label" for="email-ent">email</label>
+            <input type="email" id="email-ent" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+            <label class="popup__label" for="password-ent">Пароль</label>
+            <input type="password" id="password-ent" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
             <button type="submit" class="popup__button popup__button_size">Войти</button>
             </form>
             <p class="popup__content-entrance">или <a class="popup__content-link" href="#">Зарегистрироваться</a></p> 
@@ -77,7 +76,7 @@
             <p class="preloader__info">Идет поиск новостей...</p>
         </div>
         <div class="not-found">
-            <img class="not-found__img" src="<%=require('../images/icons/not-found_v1.svg')%>"></img>
+            <img class="not-found__img" src="<%=require('../images/icons/not-found_v1.svg')%>" alt="не найдено">
             <h4 class="not-found__title">Ничего не найдено</h4>
             <p class="not-found__paragraph">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
@@ -94,7 +93,7 @@
                     <img class="cards__img" src="<%=require('../images/image_01.jpg')%>" alt="Лесные огоньки: история одной фотографии">
                 </div>
                 <div class="cards__content">
-                    <time class="cards__time">12 января, 2021</time>
+                    <time datetime="2021-01-12" class="cards__time">12 января, 2021</time>
                     <h3 class="cards__title">Национальное достояние – парки</h3>
                     <p class="cards__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                     <p class="cards__source">Лента.ру</p>
@@ -107,7 +106,7 @@
                     <img class="cards__img" src="<%=require('../images/image_02.jpg')%>" alt="Лесные огоньки: история одной фотографии">
                 </div>
                 <div class="cards__content">
-                    <time class="cards__time">12 января, 2021</time>
+                    <time datetime="2021-01-12" class="cards__time">12 января, 2021</time>
                     <h3 class="cards__title">Лесные огоньки: история одной фотографии</h3>
                     <p class="cards__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                     <p class="cards__source cards__source_mod">Медуза</p>
@@ -120,7 +119,7 @@
                     <img class="cards__img" src="<%=require('../images/image_03.jpg')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
                 </div>
                 <div class="cards__content">
-                    <time class="cards__time">12 января, 2021</time>
+                    <time datetime="2021-01-12" class="cards__time">12 января, 2021</time>
                     <h3 class="cards__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
                     <p class="cards__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                     <p class="cards__source cards__source_pad">РИА</p>
@@ -133,7 +132,7 @@
                     <img class="cards__img" src="<%=require('../images/image_04.jpg')%>" alt="Национальное достояние – парки">
                 </div>
                 <div class="cards__content">
-                    <time class="cards__time">12 января, 2021</time>
+                    <time datetime="2021-01-12" class="cards__time">12 января, 2021</time>
                     <h3 class="cards__title">Национальное достояние – парки</h3>
                     <p class="cards__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                     <p class="cards__source">Дзен</p>
@@ -146,7 +145,7 @@
                     <img class="cards__img" src="<%=require('../images/image_05.jpg')%>" alt="Лесные огоньки: история одной фотографии">
                 </div>
                 <div class="cards__content">
-                    <time class="cards__time">12 января, 2021</time>
+                    <time datetime="2021-01-12" class="cards__time">12 января, 2021</time>
                     <h3 class="cards__title">Лесные огоньки: история одной фотографии</h3>
                     <p class="cards__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                     <p class="cards__source cards__source_mod">Афиша</p>
@@ -159,7 +158,7 @@
                     <img class="cards__img" src="<%=require('../images/image_06.jpg')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
                 </div>
                 <div class="cards__content">
-                    <time class="cards__time">12 января, 2021</time>
+                    <time datetime="2021-01-12" class="cards__time">12 января, 2021</time>
                     <h3 class="cards__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
                     <p class="cards__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                     <p class="cards__source cards__source_pad">Медиазона</p>
@@ -185,11 +184,11 @@
         <div class="footer__bar">  
         <nav class="footer__nav">
             <a class="footer__nav-link" href="./main.html">Главная</a>
-            <a class="footer__nav-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+            <a class="footer__nav-link" href="https://praktikum.yandex.ru/" target="blank">Яндекс.Практикум</a>
         </nav>
         <div class="footer__social">
-            <a class="footer__social-link" href="https://github.com"><img class="" src="<%=require('../images/icons/Github.svg')%>"></a>
-            <a class="footer__social-link" href="https://www.facebook.com/"><img class="" src="<%=require('../images/icons/Facebook.svg')%>"></a>
+            <a class="footer__social-link" href="https://github.com" target="blank"><img class="" src="<%=require('../images/icons/Github.svg')%>" alt="github"></a>
+            <a class="footer__social-link" href="https://www.facebook.com/" target="blank"><img class="" src="<%=require('../images/icons/Facebook.svg')%>" alt="facebook"></a>
         </div>
     </div>
     </footer>

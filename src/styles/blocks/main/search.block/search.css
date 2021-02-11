@@ -6,7 +6,6 @@
     align-items: center;
     max-width: 1440px;
     background-image: url(../../../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
-    background-size:contain;
     background-position:center;
     background-size: cover;
 }
@@ -16,6 +15,14 @@
         background-position:center;
         background-size: cover;
         max-width: 768px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .search {
+        background-size:contain;
+        background-position:center;
+        background-size: cover;
+        max-width: 100%;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 374px){

@@ -1,3 +1,13 @@
 .popup__button_size {
     padding: 21.14px  140.57px 18.86px 140.71px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .popup__button_size {
+        padding-left: 150px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .popup__button_size {
+        padding-left: 100px;
+    }
+}

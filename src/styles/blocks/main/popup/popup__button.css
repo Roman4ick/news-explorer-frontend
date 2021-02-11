@@ -1,5 +1,5 @@
 .popup__button {
-    padding:20px 76px 20px 78px ;
+    padding: 20px 76px 20px 78px ;
     margin-top: 39px;
     font-family: Roboto, Arial, sans-serif;
     font-style: normal;
@@ -14,4 +14,14 @@
     border: none;
     cursor: pointer;
     outline: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .popup__button {
+        padding-left: 90px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .popup__button {
+        padding-left: 35px;
+    }
 }

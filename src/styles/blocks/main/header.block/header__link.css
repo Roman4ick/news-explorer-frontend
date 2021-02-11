@@ -17,17 +17,24 @@
 }
 @media screen and (min-width: 767px) and (max-width: 1023px){
     .header__link {
-        padding-bottom: 12px;
+        padding-bottom: 13px;
         margin-right: 16px;
         padding-top: 22px;
         max-width: 768px;
     }
-
+}
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .header__link {
+        padding-top: 22px;
+        padding-bottom: 18px; 
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 374px){
-    .header__link{
-        display: none;
+    .header__link {
         border: none;
-        max-width: 320px;     
+        margin: 0;
+        padding: 0;
+        padding-bottom: 16px;
+        max-width: 100%;
     }
 }

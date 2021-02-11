@@ -1,5 +1,5 @@
 .search__form {
-    margin: 0;
+    position: relative;
     margin-top: 64px;
     display: flex;
     justify-content: space-between;
@@ -10,6 +10,11 @@
     backdrop-filter: blur(8px);
     border-radius: 100px;
     margin-bottom: 80px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+}
+.search__form:hover {
+    border: 1px solid gray;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .search__form  {
@@ -19,13 +24,19 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .search__form {
+        height: 58px;
+        max-width: 60%;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .search__form  {
         margin: 0;
+        height: 58px;
         margin-bottom: 104px;
-        width: 288px;
-        height: 56px;
-        max-width: 320px;     
+        position: relative;
+        max-width: 288px;   
     }
 }
 

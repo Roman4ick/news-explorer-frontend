@@ -17,6 +17,7 @@
 @import url(./blocks/main/header.block/_log/header__link_log.css);
 @import url(./blocks/main/header.block/_log/header__link_black.css);
 @import url(./blocks/main/header.block/_log/header__logo_black.css);
+@import url(./blocks/main/header.block/_log/header__log_white.css);
 
 /* Блок search*/
 
@@ -59,6 +60,7 @@
 @import url(./blocks/main/popup/popup__content-link.css);
 @import url(./blocks/main/popup/popup__entrance/popup__button_size.css);
 @import url(./blocks/main/popup/popup_is-opened.css);
+@import url(./blocks/main/popup/popup__wrapper.css);
 
 /* Блок news*/
 
@@ -117,6 +119,4 @@
 @import url(./blocks/news/cards__image/cards__image-value.css);
 @import url(./blocks/news/cards__image/card__image-dell/cards__image-dell.css);
 
-
-/* Блок news*/
 
