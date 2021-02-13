@@ -27,6 +27,7 @@
 @import url(./blocks/main/search.block/search__form-input.css);
 @import url(./blocks/main/search.block/search__paragraph.css);
 @import url(./blocks/main/search.block/search__title.css);
+@import url(./blocks/main/search.block/search__info.css);
 
 /* Блок preloader*/
 
@@ -120,3 +121,6 @@
 @import url(./blocks/news/cards__image/card__image-dell/cards__image-dell.css);
 
 
+body {
+    padding: 0;
+}

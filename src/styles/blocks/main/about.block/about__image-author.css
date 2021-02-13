@@ -9,6 +9,13 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .about__image-author {
+        width: 240px;
+        height: 240px;
+    
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .about__image-author {
         width: 272px;

@@ -8,7 +8,17 @@
     grid-column-gap: 16px;
     grid-row-gap: 16px;
 }
-
+@media screen and (min-width: 1023px) and (max-width: 1300px){
+    .cards {
+        padding-top: 32px;
+        padding-bottom: 37px;
+        width: 900px;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+    }
+}
 @media screen and (min-width: 767px) and (max-width: 1023px){
     .cards {
         padding-top: 32px;

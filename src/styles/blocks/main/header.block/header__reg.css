@@ -31,7 +31,7 @@
 }
 @media screen and (min-width: 375px) and (max-width: 766px){
     .header__reg{
-        max-width: 152px;
+        width: 250px;
         max-height: 40px;
         padding-top: 8px;
         padding-bottom: 8px;
