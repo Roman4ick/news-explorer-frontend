@@ -22,6 +22,11 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){  
+    .about__title {
+        padding-top: 40px;  
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .about__title {
         padding-top: 1px;

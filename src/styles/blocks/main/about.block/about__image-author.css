@@ -2,14 +2,13 @@
     width: 464px;
     height: 464px;
 }
-@media screen and (min-width: 767px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .about__image-author {
         width: 232px;
         height: 232px;
-        max-width: 768px;
     }
 }
-@media screen and (min-width: 375px) and (max-width: 766px){
+@media screen and (min-width: 375px) and (max-width: 767px){
     .about__image-author {
         width: 240px;
         height: 240px;
@@ -20,6 +19,5 @@
     .about__image-author {
         width: 272px;
         height: 272px;
-        max-width: 320px;
     }
 }

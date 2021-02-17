@@ -12,16 +12,16 @@
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .search__paragraph  {
         margin-top: 16px;
-        width: 452px;
+        max-width: 452px;
         font-size: 18px;
         line-height: 24px;
-        max-width: 768px;
+        width: 768px;
     }
 }
-@media screen and (min-width: 375px) and (max-width: 766px){
+@media screen and (min-width: 375px) and (max-width: 767px){
     .search__paragraph {
-        padding-bottom: 122px;
-        padding-left: 35px;
+        padding-bottom: 40px;
+        padding-left: 19px;
         max-width: 80%;
     }
 }

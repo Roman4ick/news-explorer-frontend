@@ -42,3 +42,12 @@ const popupEntranceClose = document.querySelector(".popup-entrance__close");
 popupEntranceClose.addEventListener("click", function (event) {
     popupEntrance.classList.remove('popup_is-opened');
 });
+const burger = document.querySelector(".burger");
+const headerBurger = document.querySelector(".header__burger");
+headerBurger.addEventListener("click", function (event) {
+    burger.classList.add('popup_is-opened');
+});
+const burgerClose = document.querySelector(".burger__close");
+burgerClose.addEventListener("click", function (event) {
+    burger.classList.remove('popup_is-opened');
+});

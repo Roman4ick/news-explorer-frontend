@@ -19,6 +19,14 @@
         margin-right: 15px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .footer__nav-link {
+        max-width: 375px;
+    }
+    .footer__nav-link:first-child {
+        margin-right: 5px;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .footer__nav-link {
         font-size: 18px;

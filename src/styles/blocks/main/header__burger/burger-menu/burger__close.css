@@ -1,0 +1,8 @@
+.burger__close {
+    padding-top: 10px;
+    padding-right: 16px;
+    max-width: 35px;
+    max-height: 35px;
+    cursor: pointer;
+    outline: none;
+}

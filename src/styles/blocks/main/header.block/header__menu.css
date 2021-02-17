@@ -2,30 +2,19 @@
     padding-right: 104px;
     align-self: center;
 }
-@media screen and (min-width: 767px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .header__menu {
         padding-right: 40px;
         max-width: 768px;
     }
 }
-@media screen and (min-width: 375px) and (max-width: 766px){
+@media screen and (min-width: 375px) and (max-width: 767px){
     .header__menu {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 30px;
+        display: none;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 374px){
-    .header__menu{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        padding-bottom: 30px;
+    .header__menu{ 
+        display: none;
     }
 }

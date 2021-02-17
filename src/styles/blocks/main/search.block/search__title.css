@@ -22,7 +22,7 @@
         line-height: 40px;
         padding-bottom: 16px;
         padding-left: 19px;
-        padding-top: 30px;
+        padding-top: 10px;
         max-width: 375px;
     }
 }
@@ -32,7 +32,7 @@
         font-size: 36px;
         line-height: 40px;
         padding-bottom: 16px;
-        padding-left: 19px;
+        padding-left: 16px;
         padding-top: 30px;
         width: 285px;
         max-width: 320px;     

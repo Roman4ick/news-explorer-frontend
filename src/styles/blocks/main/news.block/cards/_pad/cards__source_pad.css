@@ -7,8 +7,14 @@
         max-width: 768px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .cards__source_pad {
+        padding-top: 20px
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 374px){
     .cards__source_pad {
-        max-width: 320px;     
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 }

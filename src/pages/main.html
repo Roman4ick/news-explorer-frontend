@@ -9,18 +9,35 @@
 </head>
 <body>
     <section class="search">
-        <header class="header">  
-            <span class="header__logo">NewsAnalyzer</span>                   
+        <header class="header">           
+            <div class="header__body">         
+                <span class="header__logo">NewsAnalyzer</span> 
+                    <img class="header__burger" src="<%=require('../images/icons/menu.svg')%>" alt="hamburger" />   
             <nav class="header__menu"> 
                 <a class="header__link active" href="./main.html">Главная</a>
                 <button class="header__reg " type="submit">Авторизоваться</button>
                 <a class="header__link hidden" href="./news.html">Сохранённые статьи</a>
                 <button class="header__log header__log_white hidden" type="submit">Роман<img class="header__logout" src="<%=require('../images/icons/logwhite.svg')%>" alt="exit"></button>
             </nav>
+            </div>
+            <div class="burger">
+                <div class="berger__content">
+                    <div class="burger__header">
+                        <span class="header__logo">NewsAnalyzer</span> 
+                        <img src="<%=require('../images/icons/close.svg')%>" alt="Закрыть" class="burger__close" />
+                    </div>
+                    <nav class="burger__menu"> 
+                        <a class="header__link" href="./main.html">Главная</a>
+                        <button class="header__reg " type="submit">Авторизоваться</button>
+                        <a class="header__link hidden" href="./news.html">Сохранённые статьи</a>
+                        <button class="header__log header__log_white hidden" type="submit">Роман<img class="header__logout" src="<%=require('../images/icons/logwhite.svg')%>" alt="exit"></button>
+                    </nav>
+                </div> 
+            </div>
         </header>      
         <div class="search__info">  
             <h1 class="search__title">Что творится в мире?</h1>
-            <p class="search__paragraph">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+            <h4 class="search__paragraph">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h4>
         </div>
         <form class="search__form" action="#" method="get">
             <input class="search__form-input" placeholder="Введите тему новости" type="search" required/>

@@ -7,3 +7,6 @@
     .popup__info.popup_is-opened {
     display: flex;
 }
+    .burger.popup_is-opened {
+    display: block;
+}
