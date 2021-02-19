@@ -1,0 +1,27 @@
+.popup__button {
+    padding: 20px 76px 20px 78px ;
+    margin-top: 39px;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B6BCBF;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .popup__button {
+        padding-left: 90px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .popup__button {
+        padding-left: 35px;
+    }
+}

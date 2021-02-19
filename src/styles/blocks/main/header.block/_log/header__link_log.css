@@ -1,0 +1,36 @@
+.header__link_log {
+    color: #1A1B22;
+    margin-right: 32px;
+}
+.header__link_log:hover {
+    color:  #1A1B22;
+}
+.active__log {
+    border-bottom: 3px solid #1A1B22;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .header__link_log {
+        padding-bottom: 15px;
+        margin-right: 16px;
+        font-size: 16px;
+        line-height: 24px;
+        
+    }
+    .active__log {
+        border-bottom: 3px solid #1A1B22;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .header__link_log {
+        border: none;
+        color: white;
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .header__link_log {
+        border: none;
+        color: white;
+        max-width: 100%;
+    }
+}

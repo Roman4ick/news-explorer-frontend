@@ -1,0 +1,27 @@
+.preloader {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    display: none;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .preloader {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .preloader {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .preloader{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .preloader {
+        max-width: 100%;     
+    }
+}

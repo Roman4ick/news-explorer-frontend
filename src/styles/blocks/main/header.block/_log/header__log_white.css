@@ -1,0 +1,15 @@
+.header__log_white {
+    color:  white;
+    border: 1px solid #FFFFFF;
+    outline: none;
+}
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .header__log_white {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .header__log_white{
+        width: 100%;       
+    }
+}

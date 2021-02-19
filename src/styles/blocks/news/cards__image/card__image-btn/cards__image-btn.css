@@ -1,0 +1,24 @@
+.cards__image-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin-right: 24px;
+    margin-top: 24px;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-image: url(../../../../../images/icons/bookmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards__image-btn:hover {
+    background-image: url(../../../../../images/icons/bookmark_save.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards__image-btn:hover + .cards__image-info {
+    visibility: visible;
+}

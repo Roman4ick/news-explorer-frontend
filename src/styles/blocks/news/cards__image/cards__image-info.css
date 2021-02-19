@@ -1,0 +1,16 @@
+.cards__image-info {
+    position: absolute;
+    right: 0;
+    padding: 13px 12px 13px 12px;
+    margin-top: 24px;
+    margin-right: 69px;
+    background-color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    border-radius: 10px;
+    visibility: hidden;
+}

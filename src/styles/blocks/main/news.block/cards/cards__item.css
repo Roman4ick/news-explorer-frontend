@@ -1,0 +1,23 @@
+.cards__item {
+    max-width: 400px;
+    background-color: white;
+    padding-bottom: 24px;
+    border-radius: 20px;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .cards__item {
+        padding-bottom: 16px;
+        max-width: 224px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .cards__item {
+        max-width: 320px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .cards__item {
+        max-width: 288px;
+        padding-bottom: 10px;    
+    }
+}

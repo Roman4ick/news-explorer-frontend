@@ -1,0 +1,35 @@
+.search__form-input {
+    max-width: 376px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 24px;
+    font-family: Roboto,  Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #d2d6d8;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+.search__form-input:focus {
+    color: #1A1B22;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .search__form-input  {
+        max-width: 228px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .search__form-input {
+        margin: 0;
+        max-width: 288px; 
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .search__form-input  {
+        margin: 0;
+        max-width: 288px;     
+    }
+}

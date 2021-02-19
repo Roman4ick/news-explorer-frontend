@@ -1,0 +1,12 @@
+.popup.popup_is-opened {
+    display: flex;
+}
+    .popup__entrance.popup_is-opened {
+    display: flex;
+}
+    .popup__info.popup_is-opened {
+    display: flex;
+}
+    .burger.popup_is-opened {
+    display: block;
+}

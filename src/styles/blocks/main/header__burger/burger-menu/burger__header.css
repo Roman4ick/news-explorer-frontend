@@ -1,0 +1,8 @@
+.burger__header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}

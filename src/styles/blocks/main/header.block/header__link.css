@@ -1,0 +1,43 @@
+.header__link {
+    margin: 0;
+    margin-right: 32px;
+    font-family: Roboto Slab, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 25px;
+    outline: none;
+}
+.active {
+    border-bottom: 3px solid white;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .header__link {
+        padding-bottom: 13px;
+        margin-right: 16px;
+        padding-top: 22px;
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .header__link {
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .header__link {
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+}

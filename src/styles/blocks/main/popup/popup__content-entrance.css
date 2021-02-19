@@ -1,0 +1,12 @@
+.popup__content-entrance {
+    margin: 0;
+    padding-top: 16px;
+    text-align: center;
+    font-family: Inter, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}

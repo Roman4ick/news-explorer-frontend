@@ -1,0 +1,19 @@
+.cards__source_mod {
+    padding-top: 40px;
+}
+@media screen and (min-width: 1023px) and (max-width: 1300px){
+    .cards__source_mod {
+        padding-top: 60px
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 766px){
+    .cards__source_mod {
+        padding-top: 20px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .cards__source_mod {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}

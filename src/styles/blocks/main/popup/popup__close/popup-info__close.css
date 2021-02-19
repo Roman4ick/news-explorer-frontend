@@ -1,0 +1,13 @@
+.popup-info__close {
+    padding-left: 440px;
+    z-index: 10;
+    max-width: 40px;
+    max-height: 40px;
+    cursor: pointer;
+    outline: none;
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .popup-info__close {
+        padding-left: 280px;   
+    }
+}

@@ -1,0 +1,138 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+/* Страница Main */
+
+
+/* Блок Header */
+
+@import url(./blocks/main/header.block/header.css);
+@import url(./blocks/main/header.block/header__logo.css);
+@import url(./blocks/main/header.block/header__menu.css);
+@import url(./blocks/main/header.block/header__link.css);
+@import url(./blocks/main/header.block/header__reg.css);
+@import url(./blocks/main/header.block/hidden.css);
+@import url(./blocks/main/header.block/header__logout.css);
+@import url(./blocks/main/header.block/_log/header__log.css);
+@import url(./blocks/main/header.block/_log/header__link_log.css);
+@import url(./blocks/main/header.block/_log/header__link_black.css);
+@import url(./blocks/main/header.block/_log/header__logo_black.css);
+@import url(./blocks/main/header.block/_log/header__log_white.css);
+@import url(./blocks/main/header.block/header__body.css);
+
+
+
+/* Блок hamburger */
+@import url(./blocks/main/header__burger/header__burger.css);
+@import url(./blocks/main/header__burger/burger-menu/burger.css);
+@import url(./blocks/main/header__burger/burger-menu/berger__content.css);
+@import url(./blocks/main/header__burger/burger-menu/burger__menu.css);
+@import url(./blocks/main/header__burger/burger-menu/burger__header.css);
+@import url(./blocks/main/header__burger/burger-menu/burger__close.css);
+
+/* Блок search*/
+
+@import url(./blocks/main/search.block/search.css);
+@import url(./blocks/main/search.block/search__form.css);
+@import url(./blocks/main/search.block/search__form-button.css);
+@import url(./blocks/main/search.block/search__form-input.css);
+@import url(./blocks/main/search.block/search__paragraph.css);
+@import url(./blocks/main/search.block/search__title.css);
+@import url(./blocks/main/search.block/search__info.css);
+
+/* Блок preloader*/
+
+@import url(./blocks/main/preloader/preloader__circle.css);
+@import url(./blocks/main/preloader/circle.css);
+@import url(./blocks/main/preloader/preloader.css);
+@import url(./blocks/main/preloader/preloader__info.css);
+
+/* Блок not-found*/
+
+@import url(./blocks/main/not-found/not-found.css);
+@import url(./blocks/main/not-found/not-found__img.css);
+@import url(./blocks/main/not-found/not-found__paragraph.css);
+@import url(./blocks/main/not-found/not-found__title.css);
+
+/* Блок popup*/
+
+@import url(./blocks/main/popup/popup.css);
+@import url(./blocks/main/popup/popup__content.css);
+@import url(./blocks/main/popup/popup__entrance/popup__entrance.css);
+@import url(./blocks/main/popup/popup__info/popup__info.css);
+@import url(./blocks/main/popup/popup__close/popup__close.css);
+@import url(./blocks/main/popup/popup__close/popup-info__close.css);
+@import url(./blocks/main/popup/popup__close/popup-entrance__close.css);
+@import url(./blocks/main/popup/popup__title.css);
+@import url(./blocks/main/popup/popup__form/popup__form.css);
+@import url(./blocks/main/popup/popup__form/popup__input.css);
+@import url(./blocks/main/popup/popup__button.css);
+@import url(./blocks/main/popup/popup__label.css);
+@import url(./blocks/main/popup/popup__content-entrance.css);
+@import url(./blocks/main/popup/popup__content-link.css);
+@import url(./blocks/main/popup/popup__entrance/popup__button_size.css);
+@import url(./blocks/main/popup/popup_is-opened.css);
+@import url(./blocks/main/popup/popup__wrapper.css);
+
+/* Блок news*/
+
+@import url(./blocks/main/news.block/news.header/news-header.css);
+@import url(./blocks/main/news.block/news.header/news-header__title.css);
+@import url(./blocks/main/news.block/news.css);
+@import url(./blocks/main/news.block/news__button-show.css);
+@import url(./blocks/main/news.block/cards/cards.css);
+@import url(./blocks/main/news.block/cards/cards__item.css);
+@import url(./blocks/main/news.block/cards/cards__image.css);
+@import url(./blocks/main/news.block/cards/cards__paragraph.css);
+@import url(./blocks/main/news.block/cards/cards__source.css);
+@import url(./blocks/main/news.block/cards/cards__time.css);
+@import url(./blocks/main/news.block/cards/cards__title.css);
+@import url(./blocks/main/news.block/cards/cards__img.css);
+@import url(./blocks/main/news.block/cards/cards__content.css);
+@import url(./blocks/main/news.block/cards/_mod/cards__source_mod.css);
+@import url(./blocks/main/news.block/cards/_pad/cards__source_pad.css);
+@import url(./blocks/main/news.block/cards/cards__item_hidden.css);
+@import url(./blocks/main/news.block/news_hidden.css);
+@import url(./blocks/main/news.block/news__button.css);
+
+/* Блок about*/
+
+@import url(./blocks/main/about.block/about.css);
+@import url(./blocks/main/about.block/about__image.css);
+@import url(./blocks/main/about.block/about__image-author.css);
+@import url(./blocks/main/about.block/about__paragraph.css);
+@import url(./blocks/main/about.block/about__title.css);
+@import url(./blocks/main/about.block/about__author.css);
+
+/* Блок footer*/
+
+@import url(./blocks/main/footer.block/footer.css);
+@import url(./blocks/main/footer.block/footer__copyright.css);
+@import url(./blocks/main/footer.block/footer__nav.css);
+@import url(./blocks/main/footer.block/footer__nav-link.css);
+@import url(./blocks/main/footer.block/footer__social.css);
+@import url(./blocks/main/footer.block/footer__social-link.css);
+@import url(./blocks/main/footer.block/footer__bar.css);
+
+
+/* Страница News */
+
+/* Блок LOG */
+@import url(./blocks/news/log/log.css);
+@import url(./blocks/news/log/log-header.css);
+@import url(./blocks/news/log/log-header__heading.css);
+@import url(./blocks/news/log/log-header__info.css);
+@import url(./blocks/news/log/log-header__key.css);
+
+/* Блок news*/
+
+@import url(./blocks/news/cards__image/card__image-btn/cards__image-btn.css);
+@import url(./blocks/news/cards__image/cards__image-info.css);
+@import url(./blocks/news/cards__image/cards__image-value.css);
+@import url(./blocks/news/cards__image/card__image-dell/cards__image-dell.css);
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
