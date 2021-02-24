@@ -1,4 +1,4 @@
-import '../styles/main.css'
+//import '../styles/main.css'
 
 const newsButtonShow = document.querySelector('.news__button-show');
 const cardsItemHidden = document.querySelectorAll('.cards__item_hidden');

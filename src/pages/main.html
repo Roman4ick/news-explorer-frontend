@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Suvorov Roman">
     <link rel="icon" href="<%=require('../images/icons/N.svg')%>" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>MainNewsApi</title>
 </head>
 <body>
@@ -51,11 +52,14 @@
             <h3 class="popup__title">Регистрация</h3>
             <form class="popup__form">
             <label class="popup__label" for="email">email</label>
-            <input type="email" id="email" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+            <input type="email" id="email" minlength="2" name="email" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+            <span id="name-email-error" class="error" data-for="email"></span>
             <label class="popup__label" for="password">Пароль</label>
-            <input type="password" id="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+            <input type="password" id="password" name="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+            <span id="name-password-error" class="error" data-for="password"></span>
             <label class="popup__label" for="name">Имя</label>
-            <input type="text" id="name" minlength="2" maxlength="30" class="popup__input" placeholder="Введите свое имя" required/>
+            <input type="text" id="name" minlength="2" name="name" maxlength="30" class="popup__input" placeholder="Введите свое имя" required/>
+            <span id="name-name-error" class="error" data-for="name"></span>
             <button type="submit" class="popup__button">Зарегистрироваться</button>
             </form>   
             <p class="popup__content-entrance">или <a class="popup__content-link" href="#">Войти</a></p>     
@@ -69,9 +73,11 @@
             <h3 class="popup__title">Вход</h3>
             <form class="popup__form">
             <label class="popup__label" for="email-ent">email</label>
-            <input type="email" id="email-ent" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+            <input type="email" id="email-ent"  name="email" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+            <span id="name-email-error" class="error" data-for="email"></span>
             <label class="popup__label" for="password-ent">Пароль</label>
-            <input type="password" id="password-ent" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+            <input type="password" id="password-ent" name="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+            <span id="name-password-error" class="error" data-for="password"></span>
             <button type="submit" class="popup__button popup__button_size">Войти</button>
             </form>
             <p class="popup__content-entrance">или <a class="popup__content-link" href="#">Зарегистрироваться</a></p> 
@@ -168,19 +174,6 @@
                     <p class="cards__source cards__source_mod">Афиша</p>
                 </div>
             </div>
-            <div class="cards__item cards__item_hidden">
-                <div class="cards__image">
-                    <div class="cards__image-btn"></div> 
-                    <div class="cards__image-info">Войдите, чтобы сохранять статьи</div>
-                    <img class="cards__img" src="<%=require('../images/image_06.jpg')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
-                </div>
-                <div class="cards__content">
-                    <time datetime="2021-01-12" class="cards__time">12 января, 2021</time>
-                    <h3 class="cards__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                    <p class="cards__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                    <p class="cards__source cards__source_pad">Медиазона</p>
-                </div>
-            </div>
         </div>
         <div class="news__button">
             <button class="news__button-show">Показать еще</button>
@@ -209,5 +202,6 @@
         </div>
     </div>
     </footer>
+    <script src="../js/index.js"></script>
 </body>
 </html>
