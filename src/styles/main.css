@@ -11,7 +11,6 @@
 @import url(./blocks/main/header.block/header__menu.css);
 @import url(./blocks/main/header.block/header__link.css);
 @import url(./blocks/main/header.block/header__reg.css);
-@import url(./blocks/main/header.block/hidden.css);
 @import url(./blocks/main/header.block/header__logout.css);
 @import url(./blocks/main/header.block/_log/header__log.css);
 @import url(./blocks/main/header.block/_log/header__link_log.css);
@@ -131,6 +130,7 @@
 @import url(./blocks/news/cards__image/cards__image-value.css);
 @import url(./blocks/news/cards__image/card__image-dell/cards__image-dell.css);
 
+@import url(./blocks/main/header.block/hidden.css);
 
 body {
     padding: 0;

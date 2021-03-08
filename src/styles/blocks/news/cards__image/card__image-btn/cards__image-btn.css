@@ -14,6 +14,12 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.cards__image-btn_disabled {
+    cursor: not-allowed;
+}
+.cards__image-btn_disabled {
+    background-image: url(../../../../../images/icons/bookmark.svg);
+}
 .cards__image-btn:hover {
     background-image: url(../../../../../images/icons/bookmark_save.svg);
     background-repeat: no-repeat;

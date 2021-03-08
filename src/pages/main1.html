@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Suvorov Roman">
+    <link rel="icon" href="<%=require('../images/icons/N.svg')%>" type="image/x-icon">
+    <title>MainNewsApi</title>
+</head>
+<body>
+    <section class="search">
+        <header class="header">
+            <div class="header__body">
+                <span class="header__logo">NewsAnalyzer</span>
+                    <img class="header__burger" src="<%=require('../images/icons/menu.svg')%>" alt="hamburger" />
+            <nav class="header__menu">
+                <a class="header__link active" href="./main1.html">Главная</a>
+                <button class="header__reg " type="submit">Авторизоваться</button>
+
+                <div class="header__container hidden">
+                    <a class="header__link" href="./news1.html">Сохранённые статьи</a>
+                    <button class="header__log header__log_white" type="submit">
+                        <span>Роман</span>
+                        <img class="header__logout" src="<%=require('../images/icons/logwhite.svg')%>" alt="exit">
+                    </button>
+                </div>
+            </nav>
+            </div>
+            <div class="burger">
+                <div class="berger__content">
+                    <div class="burger__header">
+                        <span class="header__logo">NewsAnalyzer</span>
+                        <img src="<%=require('../images/icons/close.svg')%>" alt="Закрыть" class="burger__close" />
+                    </div>
+                    <nav class="burger__menu">
+                        <a class="header__link" href="./main1.html">Главная</a>
+                        <button class="header__reg " type="submit">Авторизоваться</button>
+                        <div class="header__container hidden">
+                            <a class="header__link" href="./news1.html">Сохранённые статьи</a>
+                            <button class="header__log header__log_white hidden" type="submit">
+                                <span class="header__name">Роман</span>
+                                <img class="header__logout" src="<%=require('../images/icons/logwhite.svg')%>" alt="exit">
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="search__info">
+            <h1 class="search__title">Что творится в мире?</h1>
+            <h4 class="search__paragraph">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h4>
+        </div>
+        <form class="search__form" action="#" method="get">
+            <input class="search__form-input" placeholder="Введите тему новости" type="search"/>
+            <div class="search__form-error hidden">
+                Нужно ввести ключевое слово.
+            </div>
+            <button class="search__form-button" type="submit">Искать</button>
+        </form>
+    </section>
+    <div class="popup popup__registration">
+        <div class="popup__wrapper">
+        <img src="<%=require('../images/icons/close.svg')%>" alt="Закрыть" class="popup__close" />
+        <div class="popup__content">
+            <h3 class="popup__title">Регистрация</h3>
+            <form class="popup__form">
+                <label class="popup__label" for="email">email</label>
+                <input type="email" id="email" minlength="2" name="email" maxlength="30" class="popup__input"
+                       placeholder="Введите email" required/>
+                <span id="name-email-error1" class="error" data-for="email"></span>
+                <label class="popup__label" for="password">Пароль</label>
+                <input type="password" id="password" name="password" minlength="2" maxlength="30" class="popup__input"
+                       placeholder="Введите пароль" required/>
+                <span id="name-password-error1" class="error" data-for="password"></span>
+                <label class="popup__label" for="name">Имя</label>
+                <input type="text" id="name" minlength="2" name="name" maxlength="30" class="popup__input"
+                       placeholder="Введите свое имя" required/>
+                <span id="name-name-error" class="error" data-for="name"></span>
+                <button type="submit" class="popup__button">Зарегистрироваться</button>
+            </form>
+            <p class="popup__content-entrance">или <a class="popup__content-link" href="#">Войти</a></p>
+        </div>
+        </div>
+    </div>
+    <div class="popup popup__entrance">
+        <div class="popup__wrapper">
+        <img src="<%=require('../images/icons/close.svg')%>" alt="Закрыть" class="popup-entrance__close" />
+        <div class="popup__content">
+            <h3 class="popup__title">Вход</h3>
+            <form class="popup__form popup__form_entrance">
+            <label class="popup__label" for="email-ent">email</label>
+            <input type="email" id="email-ent"  name="email" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+            <span id="name-email-error" class="error" data-for="email"></span>
+            <label class="popup__label" for="password-ent">Пароль</label>
+            <input type="password" id="password-ent" name="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+            <span id="name-password-error" class="error" data-for="password"></span>
+            <button type="submit" class="popup__button popup__button_size">Войти</button>
+            </form>
+            <p class="popup__content-entrance">или <a class="popup__content-link popup__content-link_registry" href="#">Зарегистрироваться</a></p>
+        </div>
+    </div>
+    </div>
+    <div class="popup popup__info hidden">
+        <div class="popup__wrapper">
+        <img src="<%=require('../images/icons/close.svg')%>" alt="Закрыть" class="popup-info__close" />
+        <div class="popup__content">
+            <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+            <a class="popup__content-link popup__content-link_info popup__content-link_size" href="#">Войти</a>
+        </div>
+    </div>
+    </div>
+    <section class="circle">
+        <div class="preloader">
+            <i class="preloader__circle"></i>
+            <p class="preloader__info">Идет поиск новостей...</p>
+        </div>
+        <div class="not-found">
+            <img class="not-found__img" src="<%=require('../images/icons/not-found_v1.svg')%>" alt="не найдено">
+            <h4 class="not-found__title">Ничего не найдено</h4>
+            <p class="not-found__paragraph">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+    </section>
+    <section class="news news_hidden">
+        <div class="news-header">
+            <h2 class="news-header__title">Результаты поиска</h2>
+        </div>
+        <div class="cards">          
+        </div>
+        <div class="news__button">
+            <button class="news__button-show">Показать еще</button>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__image">
+            <img class="about__image-author" src="<%=require('../images/image-face.jpg')%>" alt="фото автора">
+        </div>
+        <div class="about__author">
+            <h3 class="about__title">Об авторе</h3>
+            <p class="about__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            <p class="about__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; 2021 Supersite, Powered by News API</p>
+        <div class="footer__bar">
+        <nav class="footer__nav">
+            <a class="footer__nav-link" href="./main1.html">Главная</a>
+            <a class="footer__nav-link" href="https://praktikum.yandex.ru/" target="blank">Яндекс.Практикум</a>
+        </nav>
+        <div class="footer__social">
+            <a class="footer__social-link" href="https://github.com" target="blank"><img class="" src="<%=require('../images/icons/Github.svg')%>" alt="github"></a>
+            <a class="footer__social-link" href="https://www.facebook.com/" target="blank"><img class="" src="<%=require('../images/icons/Facebook.svg')%>" alt="facebook"></a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

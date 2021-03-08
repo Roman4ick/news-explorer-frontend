@@ -15,7 +15,6 @@
     line-height: 24px;
     border: 1px solid  #1A1B22;
     color: #1A1B22;
-    cursor: pointer;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .header__log {
@@ -45,6 +44,6 @@
         color: white;
         border: 1px solid  white;
         margin-top: 10px;
-        max-width: 285px;       
+        max-width: 285px;
     }
 }
