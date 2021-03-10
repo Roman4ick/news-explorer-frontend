@@ -1,13 +1,15 @@
 import { MainApi } from '../api/MainApi'
 import { Header } from './Header'
+import { apiKey,newsURL, baseURL } from '../constants/constants'
+
 
 class Form {
-  constructor() {
+  constructor(mainApi, header) {
     this.email = ''
     this.password = ''
     this.name = ''
-    this.api = new MainApi()
-    this.header = new Header()
+    this.api = mainApi
+    this.header = header
   }
 
   init () {
@@ -86,8 +88,6 @@ class Form {
       }).catch(err=>console.error('err', err))
     })
 
-
-
     const popupFormEntrance = document.querySelector(".popup__form_entrance");
     const emailEnt = popupFormEntrance.querySelector('#email-ent')
     const passwordEnt = popupFormEntrance.querySelector('#password-ent')
@@ -96,16 +96,14 @@ class Form {
       this.email = emailEnt.value
       this.password = passwordEnt.value
       this.signInHandler(this.email, this.password).then(res=>{
-        const {data} = res
-        localStorage.setItem('token', 'Bearer ' + data.token)
+        console.log(res)
+        localStorage.setItem('token', 'Bearer ' + res.token)
         this.header.render()
         popupEntrance.classList.remove('popup_is-opened');
       })
     })
 
   }
-
-
 
   signUpHandler (email, password, name) {
     return this.api.signUpHandler(email,password,name)
