@@ -5,11 +5,16 @@ const convertDate = (date) => {
       day: 'numeric',
       month: 'long'
     }
-    let d = new Date().toLocaleString('ru', options);
-    return d
+    return new Date(date).toLocaleString('ru', options)
   }
   return '-'
 }
+const daysBefore = (days) => {
+  const date = new Date()
+  return new Date(date.getTime() - (days * 24 * 60 * 60 * 1000)).getTime()
+}
+
 export {
-  convertDate
+  convertDate,
+  daysBefore
 }

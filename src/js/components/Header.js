@@ -1,8 +1,5 @@
-import { MainApi } from '../api/MainApi'
-
 export class Header {
   constructor() {
-    this.api = new MainApi()
     this.userName = ''
     this.status = true
   }
@@ -35,6 +32,14 @@ export class Header {
     }
   }
 
+  checkAuth () {
+    const lastUrl = window.location.href.split("/")
+    const lastUrlName = lastUrl[lastUrl.length - 1].match(/news/)
+    if (localStorage.getItem('token') === null && lastUrlName && lastUrlName.length) {
+      window.location.href = "/main.html";
+    }
+  }
+
   render () {
     const logInBlock = document.querySelector(".header__container")
     const authorizeBlock = document.querySelector(".header__reg ")
@@ -45,5 +50,6 @@ export class Header {
       logInBlock.classList.add("hidden");
       authorizeBlock.classList.remove("hidden");
     }
+    this.checkAuth()
   }
 }

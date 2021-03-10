@@ -9,19 +9,25 @@ export class NewsCard {
     const lastUrl = this.url.split("/")
     const lastUrlName = lastUrl[lastUrl.length - 1].match(/news/)
     if (localStorage.getItem('token') === null && lastUrlName && lastUrlName.length) {
-      window.location.href = "/main1.html";
+      window.location.href = "/main.html";
     }
   }
 
   addEvent () {
     //show more btn
     const newsButtonShow = document.querySelector('.news__button-show');
+    let count = 3
     newsButtonShow.addEventListener('click', function() {
+      count += 3
       const cardsItemHidden = document.querySelectorAll('.cards__item');
-      cardsItemHidden.forEach((card) => {
-        card.classList.remove('cards__item_hidden');
+      cardsItemHidden.forEach((card, index) => {
+        if (index < count) {
+          card.classList.remove('cards__item_hidden');
+        }
       })
-      this.classList.add('hidden');
+      if (cardsItemHidden.length <= count){
+        this.classList.add('hidden');
+      }
     })
   }
 

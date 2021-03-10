@@ -1,13 +1,11 @@
-import { MainApi } from '../api/MainApi'
 import { NewsCard } from './NewsCard'
-import { apiKey } from '../constants/constants'
+import { newsURL } from '../constants/constants'
 import {convertDate} from '../utils/utils'
-import {NewsApi} from "../api/NewsApi";
 export class Search {
-  constructor() {
+  constructor(mainApi, newsApi) {
     this.form = document.querySelector(".search__form")
-    this.api = new MainApi(apiKey)
-    this.newsApi = new NewsApi(apiKey)
+    this.api = mainApi
+    this.newsApi = newsApi
     this.newsCard = new NewsCard()
   }
 
@@ -40,8 +38,8 @@ export class Search {
           console.log(res)
           newsHidden.classList.toggle('news_hidden');
           preloader.style.display="none"
-          const {data} = res
-          const articles = data.articles
+
+          const articles = res.articles
           if (articles && articles.length) {
             this.pasteHtml(articles)
           } else {
@@ -49,12 +47,6 @@ export class Search {
           }
 
           // const cards =
-        }).catch(err=>{
-          console.error('err', err)
-          newsHidden.classList.toggle('news_hidden');
-          preloader.style.display="none"
-          newsButtonShow.classList.add('hidden');
-          newsTitle.innerHTML = 'Во время запроса произошла ошибка.\n' + 'Возможно, проблема с соединением или сервер недоступен.'
         })
 
         errorText.classList.add("hidden");
@@ -147,10 +139,12 @@ export class Search {
       cards.append(card)
     })
 
-    const btn = document.querySelectorAll(".cards__image-btn_active")
-    btn.forEach(item=>{
+    const cardsList = document.querySelectorAll(".cards__image-btn_active")
+    cardsList.forEach(item=>{
       item.addEventListener('click', function () {
         const indexOfItem = this.dataset.info
+        console.log('that.api', that.api)
+        console.log('newsURL.api', newsURL)
         that.api.createArticles(list[indexOfItem]).then(res=>{
           console.log(res)
         }).catch(err=>console.error(err))

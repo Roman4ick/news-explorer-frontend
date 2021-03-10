@@ -1,17 +1,15 @@
-import { MainApi } from '../api/MainApi'
 import {convertDate} from "../utils/utils";
-import {apiKey} from "../constants/constants";
 export class NewsCardList {
-  constructor() {
+  constructor(mainApi) {
     this.url = window.location.href
-    this.api = new MainApi(apiKey)
+    this.api = mainApi
   }
 
   init () {
     const lastUrl = this.url.split("/")
     const lastUrlName = lastUrl[lastUrl.length - 1].match(/news/)
     if (localStorage.getItem('token') === null && lastUrlName && lastUrlName.length) {
-      window.location.href = "/main1.html";
+      window.location.href = "/main.html";
     }
     this.addEvent()
   }
@@ -19,6 +17,7 @@ export class NewsCardList {
   addEvent () {
     this.getUser()
     this.getCardList()
+    this.showMoreBtn()
   }
 
   getUser () {
@@ -30,8 +29,26 @@ export class NewsCardList {
 
   getCardList() {
     this.api.getArticles().then(res=>{
-      const {data} = res
-      this.pasteHtml(data.article)
+      console.log('res', res)
+      this.pasteHtml(res.article)
+    })
+  }
+
+  showMoreBtn () {
+    //show more btn
+    const newsButtonShow = document.querySelector('.news__button-show');
+    let count = 3
+    newsButtonShow.addEventListener('click', function() {
+      count += 3
+      const cardsItemHidden = document.querySelectorAll('.cards__item');
+      cardsItemHidden.forEach((card, index) => {
+        if (index < count) {
+          card.classList.remove('cards__item_hidden');
+        }
+      })
+      if (cardsItemHidden.length <= count){
+        this.classList.add('hidden');
+      }
     })
   }
 
@@ -80,16 +97,17 @@ export class NewsCardList {
       cards.append(card)
     })
 
-    const btn = document.querySelectorAll(".cards__image-dell_active")
-    btn.forEach(item=>{
+    const cardsList = document.querySelectorAll(".cards__image-dell_active")
+    cardsList.forEach(item=>{
       item.addEventListener('click', function () {
         const indexOfItem = this.dataset.info
         that.api.removeArticles(list[indexOfItem]).then(res=>{
+          console.log('rem', res)
           if(!list.length) {
             cards.innerHTML = 'Нет сохраненных статей'
           }
           this.closest('.cards__item').classList.add('cards__item_hidden')
-        }).catch(err=>console.error(err))
+        }).catch(err=>console.error('eee', err))
       })
     })
 
