@@ -15,10 +15,12 @@
                 <img class="header__burger" src="<%=require('../images/icons/menu-black.svg')%>" alt="hamburger" />
                     <nav class="header__menu">
                         <a class="header__link header__link_black" href="./main1.html">Главная</a>
-
+                        <button class="header__reg hidden" type="submit">Авторизоваться</button>
                         <div class="header__container">
                             <a class="header__link header__link_log active__log" href="./news1.html">Сохранённые статьи</a>
-                            <button class="header__log" type="submit">Роман<img style="display: none" class="header__logout" src="<%=require('../images/icons/logblack.svg')%>" alt="exit"></button>
+                            <button class="header__log" type="submit">
+                                <span class="header__user">User</span>
+                                <img class="header__logout" src="<%=require('../images/icons/logblack.svg')%>" alt="exit"></button>
                         </div>
                     </nav>
             </div>
@@ -31,22 +33,29 @@
                     <nav class="burger__menu">
                         <a class="header__link header__link_black" href="./main1.html">Главная</a>
                         <a class="header__link header__link_log active__log" href="./news1.html">Сохранённые статьи</a>
-                        <button class="header__log" type="submit">Роман<img class="header__logout" src="<%=require('../images/icons/logwhite.svg')%>" alt="exit"></button>
+                        <button class="header__log" type="submit">
+                            <span class="header__user">User</span>
+                            <img class="header__logout" src="<%=require('../images/icons/logwhite.svg')%>" alt="exit"></button>
                     </nav>
                 </div>
             </div>
         </header>
         <div class="log-header">
             <p class="log-header__info">Сохранённые статьи</p>
-            <h1 class="log-header__heading">Роман, у вас 5 сохранённых статей</h1>
-            <h4 class="log-header__key">По ключевым словам: <strong>Природа, Тайга и 2-м другим</strong></h4>
+            <h1 class="log-header__heading">
+                <span class="log-header__name">
+                    User
+                </span>, у вас <span class="log-header__num">0</span> сохранённых статей</h1>
+            <h4 class="log-header__key">По ключевым словам: <strong>
+                <span class="log-header__keys">-</span>
+            </strong></h4>
         </div>
     </section>
     <section class="news">
         <div class="cards">
         </div>
         <div class="news__button">
-            <button class="news__button-show">Показать еще</button>
+            <button class="news__button-show hidden">Показать еще</button>
         </div>
     </section>
     <footer class="footer">

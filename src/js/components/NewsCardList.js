@@ -9,7 +9,7 @@ export class NewsCardList {
     const lastUrl = this.url.split("/")
     const lastUrlName = lastUrl[lastUrl.length - 1].match(/news/)
     if (localStorage.getItem('token') === null && lastUrlName && lastUrlName.length) {
-      window.location.href = "/main.html";
+      window.location.href = "/main1.html";
     }
     this.addEvent()
   }
@@ -21,17 +21,85 @@ export class NewsCardList {
   }
 
   getUser () {
-    this.api.getUserData().then(response => {
-      const { data } = response
-      console.log('data', data)
-    }).catch(err=>console.error('err', err))
+    // this.api.getUserData().then(response => {
+    //   const { data } = response
+    //   console.log('data', data)
+    // }).catch(err=>console.error('err', err))
+    const user = document.querySelector('.log-header__name')
+    user.textContent = localStorage.getItem('userName')
   }
 
   getCardList() {
+    const cardNum = document.querySelector('.log-header__num')
+    const newsButtonShow = document.querySelector('.news__button-show');
+
     this.api.getArticles().then(res=>{
       console.log('res', res)
       this.pasteHtml(res.article)
+      if (res.article.length > 3){
+        newsButtonShow.classList.remove('hidden')
+      }
+      cardNum.textContent = res.article.length
+      this.keyWordRender(res.article)
     })
+  }
+
+  keyWordRender (data) {
+    // console.log(this.makeKeysObj(data))
+    // const test = [
+    //   {
+    //     keyword: "Engadget",
+    //     value: 2
+    //   },
+    //   {
+    //     keyword: "Engadget1",
+    //     value: 1
+    //   },
+    //   {
+    //     keyword: "Engadget3",
+    //     value: 3
+    //   },
+    //   {
+    //     keyword: "Engadget4",
+    //     value: 4
+    //   }
+    // ]
+    const sortedByValue = this.makeKeysObj(data).sort((a,b)=>this.sortFunc(a,b))
+    const keyWordListArr = sortedByValue.map(elem=>elem.keyword)
+    let keyWordList = ''
+    const keysBlock = document.querySelector('.log-header__keys')
+    if(keyWordListArr.length > 3){
+      const text = ` и ${keyWordListArr.length - 2} другим`
+      keyWordList = keyWordListArr.splice(0, 2).join(', ') + text
+      keysBlock.textContent = keyWordList
+    } else {
+      keyWordList = keyWordListArr.join(', ')
+      keysBlock.textContent = keyWordList
+    }
+  }
+
+  makeKeysObj(target) {
+    const result = new Object
+
+    target.forEach(item => result[item.keyword] ? result[item.keyword]++ : result[item.keyword] = 1)
+
+    return Object.keys(result).map(item => {
+      return {
+        keyword: item,
+        value: result[item]
+      }
+    })
+  }
+
+  sortFunc (a, b) {
+    if (a.value < b.value) {
+      return 1;
+    }
+    if (a.value > b.value) {
+      return -1;
+    }
+    // a должно быть равным b
+    return 0;
   }
 
   showMoreBtn () {

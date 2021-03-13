@@ -1,12 +1,25 @@
 export class Header {
-  constructor() {
+  constructor(api) {
     this.userName = ''
     this.status = true
+    this.api = api
   }
 
   init() {
     this.addEvent()
     this.render()
+  }
+
+  getUserData() {
+    console.log(1113)
+    const userBlock = document.querySelector(".header__user ")
+    if (localStorage.getItem('userId') !== null) {
+      this.api.getUserData().then(res=>{
+        console.log(1114)
+        localStorage.setItem('userName', res.name)
+        userBlock.textContent = localStorage.getItem('userName')
+      })
+    }
   }
 
   addEvent () {
@@ -41,6 +54,7 @@ export class Header {
   }
 
   render () {
+    console.log(1112)
     const logInBlock = document.querySelector(".header__container")
     const authorizeBlock = document.querySelector(".header__reg ")
     if (localStorage.getItem('token') !== null) {
@@ -51,5 +65,6 @@ export class Header {
       authorizeBlock.classList.remove("hidden");
     }
     this.checkAuth()
+    this.getUserData()
   }
 }

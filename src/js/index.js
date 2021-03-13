@@ -15,7 +15,7 @@ const newsLastUrlName = lastUrl[lastUrl.length - 1].match(/news/)
 
 const mainApi = new MainApi(baseURL)
 const newsApi = new NewsApi(apiKey,newsURL)
-const header = new Header()
+const header = new Header(mainApi)
 header.init()
 if (newsLastUrlName === null) {
   const form = new Form(mainApi, header)

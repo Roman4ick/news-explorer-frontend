@@ -1,4 +1,4 @@
-import {daysBefore} from "../utils/utils";
+import {daysBefore, daysAfter} from "../utils/utils";
 
 export class NewsApi {
 
@@ -24,9 +24,9 @@ export class NewsApi {
       credentials:"same-origin"
 
     }
-    const date = new Date().getTime()
+    const after = daysAfter()
     const before = daysBefore(7)
-    return fetch(`${this.url}?from=${before}&to=${date}&q=${query}&apiKey=${this.apiKey}&pageSize=10`,options)
+    return fetch(`${this.url}?from=${before}&to=${after}&q=${query}&apiKey=${this.apiKey}&pageSize=10`,options)
       .then(response=>{
         if (response.ok) {
           return response.json();

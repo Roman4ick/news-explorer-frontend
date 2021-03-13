@@ -14,10 +14,12 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.cards__image-btn_disabled {
+.cards__image-btn_saved {
     cursor: not-allowed;
+    background-image: url(../../../../../images/icons/bookmark_saved.svg);
 }
 .cards__image-btn_disabled {
+    cursor: not-allowed;
     background-image: url(../../../../../images/icons/bookmark.svg);
 }
 .cards__image-btn:hover {

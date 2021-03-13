@@ -75,7 +75,7 @@ export class MainApi {
       method:"GET",
       credentials:"same-origin"
     }
-    return fetch(`${this.url}articles`,options)
+    return fetch(`${this.url}articles?_id=${localStorage.getItem('userId')}`,options)
       .then(response=>{
         if (response.ok) {
           return response.json();
@@ -97,7 +97,7 @@ export class MainApi {
       method:"GET",
       credentials:"same-origin"
     }
-    return fetch(`${this.url}users/me`,options)
+    return fetch(`${this.url}users/me?_id=${localStorage.getItem('userId')}`,options)
       .then(response=>{
         if (response.ok) {
           return response.json();

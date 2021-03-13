@@ -34,19 +34,17 @@ export class Search {
         this.newsCard.render()
         preloader.style.display="block"
         //popup error
+        console.log('searchInput.value', searchInput.value)
         this.newsApi.getNews(searchInput.value).then(res=>{
-          console.log(res)
-          newsHidden.classList.toggle('news_hidden');
+          console.log('res1', res)
+          newsHidden.classList.remove('news_hidden');
           preloader.style.display="none"
-
           const articles = res.articles
           if (articles && articles.length) {
             this.pasteHtml(articles)
           } else {
             newsTitle.innerHTML = 'Ничего не найдено'
           }
-
-          // const cards =
         })
 
         errorText.classList.add("hidden");
@@ -61,16 +59,17 @@ export class Search {
 
   pasteHtml (list) {
     const cards = document.querySelector(".cards")
+    cards.innerHTML = ''
     const that = this
     list.forEach((elem,index)=>{
-      let card = document.createElement('div');
+      const card = document.createElement('div');
       if(index > 2){
         if(this.checkAuth) {
           card.innerHTML= `
       <div class="cards__item cards__item_hidden">
                 <div class="cards__image">
                     <div class="cards__image-btn cards__image-btn_active" data-info="${index}"></div>
-                    <img class="cards__img" src="${elem.urlToImage}" alt="Лесные огоньки: история одной фотографии">
+                    <img class="cards__img" src="${elem.urlToImage}" alt="">
                 </div>
                 <div class="cards__content">
                     <time datetime="2021-01-12" class="cards__time">${convertDate(elem.publishedAt)}</time>
@@ -100,12 +99,10 @@ export class Search {
 
       } else {
         if(this.checkAuth) {
-
           card.innerHTML= `
       <div class="cards__item">
                 <div class="cards__image">
                     <div class="cards__image-btn cards__image-btn_active" data-info="${index}"></div>
-                    <div class="cards__image-info">Войдите, чтобы сохранять статьи</div>
                     <img class="cards__img" src="${elem.urlToImage}" alt="Лесные огоньки: история одной фотографии">
                 </div>
                 <div class="cards__content">
@@ -145,6 +142,8 @@ export class Search {
         const indexOfItem = this.dataset.info
         console.log('that.api', that.api)
         console.log('newsURL.api', newsURL)
+        console.log('newsURL.api', this)
+        this.classList.add('cards__image-btn_saved')
         that.api.createArticles(list[indexOfItem]).then(res=>{
           console.log(res)
         }).catch(err=>console.error(err))

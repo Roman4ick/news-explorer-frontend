@@ -9,7 +9,7 @@ export class NewsCard {
     const lastUrl = this.url.split("/")
     const lastUrlName = lastUrl[lastUrl.length - 1].match(/news/)
     if (localStorage.getItem('token') === null && lastUrlName && lastUrlName.length) {
-      window.location.href = "/main.html";
+      window.location.href = "/main1.html";
     }
   }
 

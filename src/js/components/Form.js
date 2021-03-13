@@ -83,8 +83,11 @@ class Form {
 
       this.signUpHandler(this.email,this.password,this.name).then(res=>{
         console.log('res',res)
+        console.log('res._id',res._id)
+        localStorage.setItem('userId', res._id)
         popupEntrance.classList.add('popup_is-opened');
         popup.classList.remove('popup_is-opened');
+        this.header.render()
       }).catch(err=>console.error('err', err))
     })
 
@@ -98,9 +101,10 @@ class Form {
       this.signInHandler(this.email, this.password).then(res=>{
         console.log(res)
         localStorage.setItem('token', 'Bearer ' + res.token)
+        localStorage.setItem('userId', res._id)
         this.header.render()
         popupEntrance.classList.remove('popup_is-opened');
-      })
+      }).catch(err=>console.error('err', err))
     })
 
   }
