@@ -28,8 +28,3 @@ if (newsLastUrlName === null) {
   const newsCardList = new NewsCardList(mainApi)
   newsCardList.init()
 }
-
-// email: "asdasda@asdasd.ru"
-// name: "asdaasd"
-// password: "asdasdaasdasd"
-

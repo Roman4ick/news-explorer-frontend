@@ -9,7 +9,7 @@ export class NewsCardList {
     const lastUrl = this.url.split("/")
     const lastUrlName = lastUrl[lastUrl.length - 1].match(/news/)
     if (localStorage.getItem('token') === null && lastUrlName && lastUrlName.length) {
-      window.location.href = "/main1.html";
+      window.location.href = "/main.html";
     }
     this.addEvent()
   }
@@ -35,12 +35,12 @@ export class NewsCardList {
 
     this.api.getArticles().then(res=>{
       console.log('res', res)
-      this.pasteHtml(res.article)
-      if (res.article.length > 3){
+      this.pasteHtml(res.data)
+      if (res.data.length > 3){
         newsButtonShow.classList.remove('hidden')
       }
-      cardNum.textContent = res.article.length
-      this.keyWordRender(res.article)
+      cardNum.textContent = res.data.length
+      this.keyWordRender(res.data)
     })
   }
 
@@ -124,7 +124,8 @@ export class NewsCardList {
     const cards = document.querySelector(".cards")
     const that = this
     list.forEach((elem,index)=>{
-      let card = document.createElement('div');
+      let card = document.createElement('div')
+      card.classList.add('cards__container')
       if(index > 2){
         card.innerHTML= `
       
@@ -174,7 +175,8 @@ export class NewsCardList {
           if(!list.length) {
             cards.innerHTML = 'Нет сохраненных статей'
           }
-          this.closest('.cards__item').classList.add('cards__item_hidden')
+          // this.closest('.cards__item').classList.add('cards__item_hidden')
+          this.closest('.cards__container').classList.add('hidden')
         }).catch(err=>console.error('eee', err))
       })
     })
